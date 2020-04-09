@@ -84,10 +84,10 @@ while True:
 
     # 重置
     old_issue_list *= 0
-    [old_issue_list.append(issue) for issue in new_issue_list]
+    old_issue_list = new_issue_list[:]
 
     old_comment_list *= 0
-    [old_comment_list.append(issue_comment) for issue_comment in new_comment_list]
+    old_comment_list = new_comment_list[:]
 
     # 发送消息通知
     headers = {'Authorization': 'Bearer ' + notify_token}
