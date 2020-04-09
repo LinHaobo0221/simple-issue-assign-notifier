@@ -84,7 +84,6 @@ while True:
 
     # 重置
     old_issue_list = new_issue_list[:]
-
     old_comment_list = new_comment_list[:]
 
     # 发送消息通知
