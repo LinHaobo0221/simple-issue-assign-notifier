@@ -1,6 +1,6 @@
 # simple-issue-assign-notifier
 
-make sure create config.ini before start the simple job
+### **make sure create config.ini before start the simple job**
 
 ```
 # github info
