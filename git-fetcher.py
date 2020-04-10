@@ -21,11 +21,6 @@ notify_token = config['line']['notify_token']
 old_issue_list = []
 old_comment_list = []
 
-git = Github(git_user, git_pwd)
-repo = git.get_repo(git_repos)
-
-my = git.get_user()
-
 
 def diff(new_item, old_list):
     inner_count = 0
@@ -37,6 +32,10 @@ def diff(new_item, old_list):
 
 
 while True:
+    git = Github(git_user, git_pwd)
+    repo = git.get_repo(git_repos)
+
+    my = git.get_user()
 
     print(str(datetime.now().strftime('%Y/%m/%d %H:%M:%S')) + ' job start.')
 
