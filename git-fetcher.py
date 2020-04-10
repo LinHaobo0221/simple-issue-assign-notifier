@@ -93,4 +93,4 @@ while True:
         payload = {'message': 'New Assign or Comment: ' + issue.html_url}
         requests.post(notify_url, headers=headers, params=payload, )
     print('job end.')
-    time.sleep(20)
+    time.sleep(60)
