@@ -6,7 +6,7 @@ idna==2.9
 mysql==0.0.2
 mysql-connector-python==8.0.19
 mysqlclient==1.4.6
-protobuf==3.11.3
+protobuf==3.18.3
 PyGithub==1.47
 PyJWT==1.7.1
 requests==2.23.0
